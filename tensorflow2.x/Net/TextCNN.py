@@ -29,6 +29,3 @@ class TextCNN(object):
         output=Dense(self.nums_class,activation=self.last_activition)(x)
         model=Model(inputs=input,outputs=output)
         return model
-
-
-TextCNN(100,400001,50).get_model()
